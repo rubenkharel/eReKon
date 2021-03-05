@@ -1,37 +1,68 @@
-## Welcome to GitHub Pages
+# eReKon
 
-You can use the [editor on GitHub](https://github.com/rubenkharel/eReKon/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Yet another web recon tool But beautiful (not the code). 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Features
 
-### Markdown
+- Easy to find information like CVE, Port informations, Status infos, IP info.
+- Login/Register
+- Saves all the scans on database for later use
+- Smooth UX/UI
+#### Ease Scan
+- Subdomain Scanning (findomain)
+- PortScanning (evilscan)
+- Version Scanner (Wappalizer)
+- Screenshots (Puppeter iguess)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#### Effective Scan (UNDERDEVELOPMENT)
+- All of the above from Easy scan
+- Subdomain Bruteforce (ffuf) 
+- Directory scanning (??idk??) 
+#### Tech Used
+- React.js (Frontend)
+- Node.js (Backend)
+- MongoDB (Database)
+- Express (Server)
 
-```markdown
-Syntax highlighted code block
+## Install
 
-# Header 1
-## Header 2
-### Header 3
+### Manual
+#### FrontEnd 
 
-- Bulleted
-- List
+> $git clone https://github.com/rubenkharel/erekon
 
-1. Numbered
-2. List
+> $cd erekon/frontend
 
-**Bold** and _Italic_ and `Code` text
+> $npm install
 
-[Link](url) and ![Image](src)
-```
+> $npm start
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Backend
 
-### Jekyll Themes
+> $cd erekon/backend
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rubenkharel/eReKon/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+> $npm install
 
-### Support or Contact
+> $npm start
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### Database
+
+Makesure you have mongod working properly on your system
+
+> $mongod --noauth --port 4000 --dbpath ~/where/to/create/your/database
+
+or you can just get a free mongodb cluster(ig) and modify MONGO_CONNECT's value on `.env` file.
+
+
+### Docker???
+I still dont know the D of docker. You can send PR if you are willing to create a dockerfile
+
+## Warning and Some infos about repo.
+
+Since, this was the first ever (maybe second, idk) project I built after learning Node.js, I believe its very messy with bad practices... so, it might make you go bang your head if you start doing code review.
+
+But I assure you this repo is very beginner friendly to get you started on opensource contribution.
+
+Create issue if you have any feature request, which I never may build unless I get some free time and get high and think that actually is a great feature to implement.
+
+PR are more then welcome, Any kind of PR... Readme update, READ_BEFORE_CONTRIBUTE.md? kinda thing, or bug fixes? dockerimage? code refactor? anything.. just send PR. I dont have to get high to consider approving PRs btw. 
